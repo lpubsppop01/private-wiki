@@ -30,6 +30,8 @@ git push をパスワードを聞かれずにできるように設定。
   $ nohup jingo -c config.yaml > /dev/null &
   ```
   
+---
+  
 インデントまわりに不備があったため一度作り直したのだけど、試しに `*.md` をサブディレクトリに置くのを試してうまくいかなかったのでメモ。
   - 格納先は config.yaml の application.subDocdir で設定できる。
   - しかし列挙のソート順が更新日時に従わない。
