@@ -1,5 +1,5 @@
 # TypeScript による Node.js モジュールのプロジェクト管理について
-ゴールは Visual Studio Code + TypeScript で Node.js モジュールを作成する前提知識を得ること。
+ゴールは Visual Studio Code + TypeScript で Node.js モジュールを作成する前提知識を得ること。2017/05 に調査。
 
 まずそもそもの Node.js モジュールについて。ライブラリを書くなら package.json と lib/index.js を用意する感じ。
 - [3分でできるnpmモジュール - Qiita](http://qiita.com/fnobi/items/f6b1574fb9f4518ed520)
