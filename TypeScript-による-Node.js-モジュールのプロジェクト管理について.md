@@ -34,6 +34,12 @@ VS Code に特有のファイルとしては以下。
 ---
 
 TODO：単体テストまわり。
+http://blog.syati.info/post/typescript_coverage/
+
+---
+
+TODO：プロジェクトテンプレートまわり。giter8 的なやつ。どうも Yeoman がそうらしい。
+https://www.slideshare.net/mobile/girigiribauer/20130629-yeoman
 
 ---
 
