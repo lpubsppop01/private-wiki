@@ -1,5 +1,5 @@
 # TypeScript による Node.js モジュールのプロジェクト管理について
-ゴールは Visual Studio Code + TypeScript で Node.js モジュールを作成する前提知識を得ること。2017/05 に調査。
+ゴールは Visual Studio Code + TypeScript で Node.js モジュールを作成すること。2017/05 に調査。
 
 まずそもそもの Node.js モジュールについて。ライブラリを書くなら package.json と lib/index.js を用意する感じ。
 - [3分でできるnpmモジュール - Qiita](http://qiita.com/fnobi/items/f6b1574fb9f4518ed520)
@@ -19,7 +19,7 @@ TypeScript での Node.js モジュールの扱いについて。
 - tsconfig.json プロジェクト定義ファイル
 - JavaScript モジュールに対して静的な型チェックを有効にするための型定義ファイル
 
-型定義ファイルの管理ツールとして現在は typeings が推奨されている。
+型定義ファイルの管理ツールとして現在は Typeings が推奨されている。
 - [TypeScriptの型定義管理ツールTypingsについて - Qiita](http://qiita.com/literalice/items/d83249a5646abcb0bec6)
 
 ---
