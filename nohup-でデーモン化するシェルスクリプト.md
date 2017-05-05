@@ -15,6 +15,7 @@ Windows は PowerShell に近いコマンドレットがあるとか、そもそ
 雛形がほしい。
 
 たぶんいろんな人が書いているはず（というか自分も学生のとき書いてるんじゃないか？）だけど、とりあえず作業中に以下がヒットした。こういうのがほしい。
-[プログラムをnohupでデーモン化する - Qiita](http://qiita.com/geta6/items/9472f6f192976670c93f)
+- [プログラムをnohupでデーモン化する - Qiita](http://qiita.com/geta6/items/9472f6f192976670c93f)
 
-使いまわせるような形で作成中…
+private-wiki 用に作成：
+- [private-wiki/bin/admin.sh](https://github.com/lpubsppop01/private-wiki/blob/master/bin/admin.bash)
