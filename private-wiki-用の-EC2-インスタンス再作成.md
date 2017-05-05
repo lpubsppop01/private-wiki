@@ -29,10 +29,25 @@ git push をパスワードを聞かれずにできるように設定。
   $ cd ~/private-wiki
   $ nohup jingo -c config.yaml > /dev/null &
   ```
-  
+
 ---
   
 インデントまわりに不備があったため一度作り直したのだけど、試しに `*.md` をサブディレクトリに置くのを試してうまくいかなかったのでメモ。
   - 格納先は config.yaml の application.subDocdir で設定できる。
   - しかし列挙のソート順が更新日時に従わない。
   - そもそも git の ls-tree は必ずしも更新日時順にはならないっぽい？
+
+---
+
+2017/05/05 リポジトリの調整、デーモンの開始・停止まわりをシェルスクリプトにしてみた（[admin.bash](https://github.com/lpubsppop01/private-wiki/blob/master/bin/admin.bash)）。一応作業内容：
+```
+$ mkdir ~/bin
+$ cd ~/bin
+$ ln -s ../private-wiki/bin/admin.bash private-wiki-admin
+$ echo 'export PATH=$HOME/bin:$PATH' >> ~/.bash_profile
+$ sudo apt-get install php composer unzip
+$ mkdir -p ~/opt/composer
+$ cd ~/opt/composer
+$ composer require grasmash/yaml-cli
+$ echo 'export PATH=$HOME/opt/composer/vendor/bin:$PATH' >> ~/.bash_profile
+```
