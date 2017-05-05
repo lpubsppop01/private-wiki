@@ -11,3 +11,6 @@ YAML をコマンドラインで編集できるようなツールはないかと
 * Python shyaml
     + pip からインストール可能
     + get のみ
+* PHP grasmash/yaml-cli
+    + Composer からインストール可能
+    + 今のところ Windows 環境でいい感じに動作している
