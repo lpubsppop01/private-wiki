@@ -39,7 +39,7 @@ git push をパスワードを聞かれずにできるように設定。
 
 ---
 
-2017/05/05 リポジトリの調整、デーモンの開始・停止まわりをシェルスクリプトにしてみた（[admin.bash](https://github.com/lpubsppop01/private-wiki/blob/master/bin/admin.bash)）。一応作業内容：
+2017/05/05 リポジトリの調整、設定ファイルの作成、デーモンの開始・停止まわりをシェルスクリプトにしてみた（[admin.bash](https://github.com/lpubsppop01/private-wiki/blob/master/bin/admin.bash)）。一応サーバー側での作業内容：
 ```
 $ mkdir ~/bin
 $ cd ~/bin
