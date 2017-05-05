@@ -1,10 +1,10 @@
-#! /bin/sh
+#! /bin/bash
 # -*- coding: utf-8-unix -*-
 
 # Filename: admin.sh
 # Author: lpubsppop01
 # Created: 2017/05/04 17:12:36
-# Last modified: 2017/05/05 16:52:06
+# Last modified: 2017/05/05 17:15:39
 
 # Required:
 # * PHP grasmash/yaml-cli (to edit YAML file)
