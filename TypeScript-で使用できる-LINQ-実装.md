@@ -5,6 +5,7 @@
     - たしかこれが最初に登場した実装。登場したとき話題になっていた。
     - TypeScript も考慮されている。
         - [neue cc - linq.jsのTypeScript対応とTypeScript雑感](http://neue.cc/2012/10/12_382.html)
+    - メソッド名が小文字からになっているのはこの実装だけ。
     - TypeScript からは `import * as Enumerable from "linq";` で利用できる
 - [LinQ for TypeScript](https://github.com/kutyel/linq.ts)
     - npm：[linqts](https://www.npmjs.com/package/linqts)
