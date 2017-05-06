@@ -22,7 +22,9 @@ st/**/*-spec.ts''.
 `**` は bash の拡張書式らしい。怪しいかと思ったが、全て外しても変わらなかった。
 - [Wild card path with ** does not seems to be working for a lot of tools · Issue #18 · keithamus/npm-scripts-example · GitHub](https://github.com/keithamus/npm-scripts-example/issues/18)
 
-しかし直接 mocha を実行するとちゃんと動く。
+しかし直接 mocha を実行するとちゃんと動く。node_modules にあるけど、PATH が通った場所にもないとだめなのか。
 ```
 PS> node .\node_modules\mocha\bin\mocha --compilers ts:ts-node/register --recursive 'test/**/*-spec.ts'
 ```
+
+`'test/**/*-spec.ts'` を展開しているのは mocha の方、と思う。しかし PowerShell では通る上のコマンドが cmd だと No test files found になる。謎だ。
