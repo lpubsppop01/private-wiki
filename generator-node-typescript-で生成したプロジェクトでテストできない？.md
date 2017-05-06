@@ -1,4 +1,4 @@
-# generator-node-typescript で生成したプロジェクトでテストできない？
+# generator-node-typescript で生成したプロジェクトの調整
 `yo node-typescript` で生成したプロジェクトで `npm run test` としてもエラーで動かない。どうも Windows だとだめなやつっぽい。
 ```
 Warning: Could not find any test files matching pattern: 'test/**/*-spec.ts'
@@ -16,3 +16,14 @@ mocha の実行部分を cmd で実行してみたところ `'test/**/*-spec.ts'
 
 node_modules の下の mocha を実行できているのは `node_modules/.bin` に自動で PATH が通るかららしい。
 - [npm で依存もタスクも一元化する - Qiita](http://qiita.com/Jxck_/items/efaff21b977ddc782971)
+
+---
+
+デフォルトでは TSLint が１ファイル１クラスを要求してくるけど、細かいモデルクラスくらい１ファイルに押し込めておきたいので設定ファイル `tslint.json` を変更。
+```
+$ cd $PROJ_ROOT
+$ 
+```
+
+"use strict" については自動で付けてくれるようになったため不要。
+- [](http://qiita.com/gaaamii/items/84ef50277d962fa2c73d)
