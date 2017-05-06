@@ -6,3 +6,10 @@
 その他妄想：
 - TypeScript + Electron で作ってみたい（タイトルに入っちゃってるけど）
 - n-gram 索引（実験用）
+
+howm の詳細ページを改めて読むとすごく多機能。これは electron-howm-subset かな。
+- [README.ja.rd](http://howm.osdn.jp/README-j.html)
+
+---
+
+まずはパーサーを作成。
