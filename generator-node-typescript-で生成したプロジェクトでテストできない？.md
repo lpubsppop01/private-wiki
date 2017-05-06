@@ -21,9 +21,13 @@ node_modules の下の mocha を実行できているのは `node_modules/.bin` 
 
 デフォルトでは TSLint が１ファイル１クラスを要求してくるけど、細かいモデルクラスくらい１ファイルに押し込めておきたいので設定ファイル `tslint.json` を変更。
 ```
-$ cd $PROJ_ROOT
-$ 
+{
+  "extends": "tslint:latest",
+  "rules": {
+    "max-classes-per-file": [false, 1]
+  }
+}
 ```
 
-"use strict" については自動で付けてくれるようになったため不要。
-- [](http://qiita.com/gaaamii/items/84ef50277d962fa2c73d)
+"use strict" については TypeScript は自動で付けてくれるようになったため不要。
+- [TypeScript (1.8) のモジュール・クラス・型定義の書き方 - Qiita](http://qiita.com/gaaamii/items/84ef50277d962fa2c73d)
