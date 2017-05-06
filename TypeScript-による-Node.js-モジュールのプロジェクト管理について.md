@@ -45,8 +45,6 @@ VS Code に特有のファイルとしては以下。
 - Jasmine も単体テストフレームワーク。ググった感じでは Mocha の方が優勢に感じる。
 - Karma はテスト実行環境（test runner）。テスト前にビルドするとかの面倒を見てくれる。
 
-ひとまず Mocha + power-assert でシンプルに始めればいいか。たぶん test runner まわりは gulp でもできるんじゃないか？
-
 ---
 
 プロジェクトテンプレート／ジェネレータまわり。giter8 的なやつ。どうも Yeoman がそうらしい。
@@ -78,6 +76,8 @@ PS> yo node-typescript --gulp # gulp でビルドする場合
 generator-node-typescript で生成したファイルを眺めて何となく納得はできた。
 - src にソースコード、test にテストコード
 - ビルドで lib/index.js などを生成（package.json の main で指す）
+
+generator-node-typescript を使ってやってみる、でひとまず終わり。
 
 ---
 
