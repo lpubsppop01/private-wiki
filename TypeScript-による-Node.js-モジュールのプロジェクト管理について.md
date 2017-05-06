@@ -56,16 +56,18 @@ generator-generator と npm link で自分用のお手軽テンプレートが�
 
 TypeScript で Node.js モジュールを作る用の generator。
 - [generator-node-typescript](https://www.npmjs.com/package/generator-node-typescript)
+- [GitHub - ospatil/generator-node-typescript](https://github.com/ospatil/generator-node-typescript)
 
 試してみた。
 ```
 Admin-PS> npm install yo -g
 Admin-PS> npm install generator-node-typescript
 PS> cd WORK_DIR
-PS> yo node-typescript
+PS> yo node-typescript        # npm でビルドする場合
+PS> yo node-typescript --gulp # gulp でビルドする場合
 ```
+
 なんか @types/node が npm レジストリにないとか怒られる。メンテされているっぽいのだけど…。
-- [GitHub - ospatil/generator-node-typescript](https://github.com/ospatil/generator-node-typescript)
 - Chocolatey でインストールした npm 1.4.9（超古い）を使っていた…。どうりで更新してもバージョン表記が変わらないなと。独立して配布されていた最後のバージョン、ということらしいけど紛らわしいと思っちゃう。
     - [Chocolatey Gallery | Node Package Manager (npm) 1.4.9](https://chocolatey.org/packages/npm/1.4.9)
 
