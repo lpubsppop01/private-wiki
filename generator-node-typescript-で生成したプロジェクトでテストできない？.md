@@ -37,4 +37,9 @@ node_modules の下の mocha を実行できているのは `node_modules/.bin` 
 テストに失敗したときに npm が詳細なエラーメッセージを付け加えるのだけど、普段は邪魔なので消したい。
 - [mocha vs npm test · Issue #457 · mochajs/mocha · GitHub](https://github.com/mochajs/mocha/issues/457)
 
-`npm test -s` で loglevel が silent になる。常に silent にしたい場合は `npm config set loglevel silent` とする。バランスを取るなら `npm config set loglevel win` がいいみたい。
+`npm test -s` で loglevel が silent になる。常に silent にしたい場合は `npm config set loglevel silent` とする。バランスを取るなら `npm config set loglevel win`。
+
+今は名前が変わっているみたい。simple、effective、convenient の３択。
+- [loglevel](https://www.npmjs.com/package/loglevel)
+
+これも違うっぽい。後でちゃんと調べる。
