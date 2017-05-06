@@ -36,10 +36,11 @@ VS Code に特有のファイルとしては以下。
 単体テストフレームワークでメジャーなのは mocha、karma、jasmine 辺り。
 - [TypeScript でユニットテストする。カバレッジもねっ!! - Syati.info](http://blog.syati.info/post/typescript_coverage/)
 - [Karma, Mocha, Chaiを使ってTypeScriptでのテスト環境を構築する - $shibayu36->blog;](http://blog.shibayu36.org/entry/2016/04/12/180000)
+- [Chaiをやめてpower-assertを使うことにした - WEB SALAD](http://web-salad.hateblo.jp/entry/2016/01/26/083000)
 
 どれかを使うというのではなく組み合わせるらしい。
 - Mocha は単体テストフレームワークだけど Assertion ライブラリは含まれていない。
-    - リンク先で使用している Assertion ライブラリはそれぞれ power-assert、Chai。
+    - リンク先で使用している Assertion ライブラリは power-assert と Chai。
     - Mocha には test runner も含まれているが、機能面で Karma に及ばないため組み合わせるのが定石らしい？
 - Jasmine も単体テストフレームワーク。ググった感じでは Mocha の方が優勢に感じる。
 - Karma はテスト実行環境（test runner）。テスト前にビルドするとかの面倒を見てくれる。
@@ -48,8 +49,14 @@ VS Code に特有のファイルとしては以下。
 
 ---
 
-TODO：プロジェクトテンプレートまわり。giter8 的なやつ。どうも Yeoman がそうらしい。
+プロジェクトテンプレートまわり。giter8 的なやつ。どうも Yeoman がそうらしい。
 https://www.slideshare.net/mobile/girigiribauer/20130629-yeoman
+
+generator-generator と npm link で自分用のお手軽テンプレートができる。これに限らず npm link は覚えておこう。
+
+---
+
+TODO: 結局どういうファイル構成になるのか？
 
 ---
 
