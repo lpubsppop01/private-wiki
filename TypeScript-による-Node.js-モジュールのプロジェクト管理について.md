@@ -20,8 +20,7 @@ TypeScript での Node.js モジュールの扱いについて。
 - tsconfig.json プロジェクト定義ファイル
 - JavaScript モジュールに対して静的な型チェックを有効にするための型定義ファイル
 
-型定義ファイルの管理ツールとして現在は Typeings が推奨されている。
-- [TypeScriptの型定義管理ツールTypingsについて - Qiita](http://qiita.com/literalice/items/d83249a5646abcb0bec6)
+型定義ファイルの管理ツールとして tsd、Typeings が過去に使われてきたが、TypeScript 2 では npm だけで完結するようになっている。
 
 ---
 
