@@ -19,12 +19,13 @@ node_modules の下の mocha を実行できているのは `node_modules/.bin` 
 
 ---
 
-デフォルトでは TSLint が１ファイル１クラスを要求してくるけど、細かいモデルクラスくらい１ファイルに押し込めておきたいので設定ファイル `tslint.json` を変更。
+デフォルトでは TSLint が１ファイル１クラスを要求してくるけど、細かいモデルクラスくらい１ファイルに押し込めておきたいので設定ファイル `tslint.json` を変更。あとプロパティのアクセス修飾子必須をオフ。
 ```
 {
   "extends": "tslint:latest",
   "rules": {
-    "max-classes-per-file": [false, 1]
+    "max-classes-per-file": false,
+    "member-access": false
   }
 }
 ```
@@ -37,9 +38,8 @@ node_modules の下の mocha を実行できているのは `node_modules/.bin` 
 テストに失敗したときに npm が詳細なエラーメッセージを付け加えるのだけど、普段は邪魔なので消したい。
 - [mocha vs npm test · Issue #457 · mochajs/mocha · GitHub](https://github.com/mochajs/mocha/issues/457)
 
-`npm test -s` で loglevel が silent になる。常に silent にしたい場合は `npm config set loglevel silent` とする。バランスを取るなら `npm config set loglevel win`。
+`npm test -s` で loglevel が silent になる。常に silent にしたい場合は `npm config set loglevel silent` とする。
 
-今は名前が変わっているみたい。simple、effective、convenient の３択。
-- [loglevel](https://www.npmjs.com/package/loglevel)
+`npm config set loglevel win` は実際やってみたら invalid と怒られた。今は名称が変わったのだと思う。`warn` は valid ではあったけどメッセージは抑制されなかった。
 
-これも違うっぽい。後でちゃんと調べる。
+とりあえず `npm config set loglevel silent -g` としておいた。
