@@ -22,4 +22,7 @@ st/**/*-spec.ts''.
 `**` は bash の拡張書式らしい。怪しいかと思ったが、全て外しても変わらなかった。
 - [Wild card path with ** does not seems to be working for a lot of tools · Issue #18 · keithamus/npm-scripts-example · GitHub](https://github.com/keithamus/npm-scripts-example/issues/18)
 
-どうしたものか。
+しかし直接 mocha を実行するとちゃんと動く。
+```
+PS> node .\node_modules\mocha\bin\mocha --compilers ts:ts-node/register --recursive 'test/**/*-spec.ts'
+```
