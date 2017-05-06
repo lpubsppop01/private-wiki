@@ -19,17 +19,13 @@ npm ERR! Failed at the howm-js@0.0.0 test script 'npm run build && mocha --compi
 st/**/*-spec.ts''.
 ```
 
-`**` は bash の拡張書式？怪しいかと思ったが、全て外しても変わらなかった。
-- [Wild card path with ** does not seems to be working for a lot of tools · Issue #18 · keithamus/npm-scripts-example · GitHub](https://github.com/keithamus/npm-scripts-example/issues/18)
+試行錯誤。
+- `**` は bash の拡張書式？怪しいかと思ったが、全て外しても変わらなかった。
+    - [Wild card path with ** does not seems to be working for a lot of tools · Issue #18 · keithamus/npm-scripts-example · GitHub](https://github.com/keithamus/npm-scripts-example/issues/18)
+- 直接 mocha を実行するとちゃんと動く。node_modules にある方を使った方がいいような。あとシングルクォートだと cmd では動かなかった。
+  ```
+  > node .\node_modules\mocha\bin\mocha --compilers ts:ts-node/register --recursive "test/**/*-spec.ts"
+  ```
 
-直接 mocha を実行するとちゃんと動く。node_modules にあるけど、PATH が通った場所にもないとだめなのか。
-```
-PS> node .\node_modules\mocha\bin\mocha --compilers ts:ts-node/register --recursive 'test/**/*-spec.ts'
-```
-
-`'test/**/*-spec.ts'` を展開しているのは mocha の方、と思う。しかし PowerShell では通る上のコマンドが cmd だと No test files found になる。謎だ。
-
-以下なら cmd でも PowerShell でも動くが、`*-spec.ts` 以外も対象になるため等価ではない。
-```
-> node .\node_modules\mocha\bin\mocha --compilers ts:ts-node/register --recursive test
-```
+以下によると本来は `node_modules/.bin` に自動で PATH が通るものらしい。
+- [npm で依存もタスクも一元化する - Qiita](http://qiita.com/Jxck_/items/efaff21b977ddc782971)
