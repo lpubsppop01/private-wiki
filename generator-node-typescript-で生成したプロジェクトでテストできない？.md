@@ -1,5 +1,5 @@
 # generator-node-typescript で生成したプロジェクトの調整
-`yo node-typescript` で生成したプロジェクトで `npm run test` としてもエラーで動かない。どうも Windows だとだめなやつっぽい。
+`yo node-typescript` で生成したプロジェクトで `npm test` としてもエラーで動かない。どうも Windows だとだめなやつっぽい。
 ```
 Warning: Could not find any test files matching pattern: 'test/**/*-spec.ts'
 No test files found
@@ -31,3 +31,10 @@ node_modules の下の mocha を実行できているのは `node_modules/.bin` 
 
 "use strict" については TypeScript は自動で付けてくれるようになったため不要。
 - [TypeScript (1.8) のモジュール・クラス・型定義の書き方 - Qiita](http://qiita.com/gaaamii/items/84ef50277d962fa2c73d)
+
+---
+
+テストに失敗したときに npm が詳細なエラーメッセージを付け加えるのだけど、普段は邪魔なので消したい。
+- [mocha vs npm test · Issue #457 · mochajs/mocha · GitHub](https://github.com/mochajs/mocha/issues/457)
+
+`npm test -s` で loglevel が silent になる。常に silent にしたい場合は `npm config set loglevel silent` とする。バランスを取るなら `npm config set loglevel win` がいいみたい。
