@@ -64,9 +64,10 @@ Admin-PS> npm install generator-node-typescript
 PS> cd WORK_DIR
 PS> yo node-typescript
 ```
-なんか types/node が npm レジストリにないとか怒られる。メンテされているっぽいのだけど…。
+なんか @types/node が npm レジストリにないとか怒られる。メンテされているっぽいのだけど…。
 - [GitHub - ospatil/generator-node-typescript](https://github.com/ospatil/generator-node-typescript)
-- Chocolatey でインストールした npm 1.4.9（超古い）を使っていた…。どうりで更新してもバージョン表記が変わらないなと。元々は独立して配布されていた名残らしい。
+- Chocolatey でインストールした npm 1.4.9（超古い）を使っていた…。どうりで更新してもバージョン表記が変わらないなと。独立して配布されていた最後のバージョン、ということらしいけど紛らわしいと思っちゃう。
+    - [Chocolatey Gallery | Node Package Manager (npm) 1.4.9](https://chocolatey.org/packages/npm/1.4.9)
 
 ---
 
