@@ -9,6 +9,7 @@ Node.js のモジュールの仕組みは CommonJS という仕様に基づい�
 
 ときどき出てくる gulp はビルドツールのこと。
 - [現場で使えるgulp入門 - gulpとは何か | CodeGrid](https://app.codegrid.net/entry/gulp-1)
+- npm には gulp (3.x) と glup4 があるけど、4 系でいいのか判断が付かない 
 
 ---
 
@@ -45,18 +46,35 @@ VS Code に特有のファイルとしては以下。
 - Jasmine も単体テストフレームワーク。ググった感じでは Mocha の方が優勢に感じる。
 - Karma はテスト実行環境（test runner）。テスト前にビルドするとかの面倒を見てくれる。
 
-ひとまず Mocha + power-assert でシンプルに始めればいいか。
+ひとまず Mocha + power-assert でシンプルに始めればいいか。たぶん test runner まわりは gulp でもできるんじゃないか？
 
 ---
 
-プロジェクトテンプレートまわり。giter8 的なやつ。どうも Yeoman がそうらしい。
-https://www.slideshare.net/mobile/girigiribauer/20130629-yeoman
+プロジェクトテンプレート／ジェネレータまわり。giter8 的なやつ。どうも Yeoman がそうらしい。
+- [フロントエンドのツール Yeoman を勘違いしていた](https://www.slideshare.net/girigiribauer/20130629-yeoman)
 
 generator-generator と npm link で自分用のお手軽テンプレートができる。これに限らず npm link は覚えておこう。
 
+TypeScript で Node.js モジュールを作る用の generator。
+- [generator-node-typescript](https://www.npmjs.com/package/generator-node-typescript)
+
+試してみた。
+```
+Admin-PS> npm install yo -g
+Admin-PS> npm install generator-node-typescript
+PS> cd WORK_DIR
+PS> yo node-typescript
+```
+なんか types/node が npm レジストリにないとか怒られる。メンテされているっぽいのだけど…。
+- [GitHub - ospatil/generator-node-typescript](https://github.com/ospatil/generator-node-typescript)
+
 ---
 
-TODO: 結局どういうファイル構成になるのか？
+結局どういうファイル構成になるのか？
+
+generator-node-typescript で生成したファイルを眺めて何となく納得はできた。
+- src にソースコード、test にテストコード
+- ビルドで lib/index.js などを生成（package.json の main で指す）
 
 ---
 
