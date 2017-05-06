@@ -66,6 +66,7 @@ PS> yo node-typescript
 ```
 なんか types/node が npm レジストリにないとか怒られる。メンテされているっぽいのだけど…。
 - [GitHub - ospatil/generator-node-typescript](https://github.com/ospatil/generator-node-typescript)
+- Chocolatey でインストールした npm 1.4.9（超古い）を使っていた…。どうりで更新してもバージョン表記が変わらないなと。
 
 ---
 
