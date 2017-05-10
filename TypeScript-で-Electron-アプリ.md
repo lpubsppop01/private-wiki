@@ -20,5 +20,5 @@ $ npm install electron --save
 $ npm install @types/electron --save
 ```
 
-import まわりの構文で迷ったが、以下の書き方は通用した。
-* [electron-typescript-sample/main.ts at master · sourcechord/electron-typescript-sample · GitHub](https://github.com/sourcechord/electron-typescript-sample/blob/master/main.ts)
+import まわりの構文で迷ったが、以下の書き方は通用した。シンプルないいサンプル。
+* [GitHub - sourcechord/electron-typescript-sample: Sample for 'Electron + TypeScript App'](https://github.com/sourcechord/electron-typescript-sample)
