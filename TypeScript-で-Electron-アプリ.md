@@ -14,14 +14,22 @@
 
 ---
 
-generator-node-typescript で作ったプロジェクトで必要なパッケージを入れて試す。electron の方は初回はファイルのダウンロードに失敗したらしかったけど２回目で成功。
+generator-node-typescript をベースに試行したが、たぶん以下のサンプルを clone して試した方がよかった。シンプルかつ現在も通用する書き方になってる。
+- [GitHub - sourcechord/electron-typescript-sample: Sample for 'Electron + TypeScript App'](https://github.com/sourcechord/electron-typescript-sample)
+    - 他にもよさそうなサンプルがある。Monaco とか完全に忘れてた。
+
+必要なパッケージは以下のふたつ。electron の方は初回はファイルのダウンロードに失敗したらしかったけど２回目で成功。
 ```
 $ npm install electron --save
 $ npm install @types/electron --save
 ```
 
-import まわりの構文で迷ったが、以下の書き方は通用した。シンプルないいサンプル。
-* [GitHub - sourcechord/electron-typescript-sample: Sample for 'Electron + TypeScript App'](https://github.com/sourcechord/electron-typescript-sample)
+- import は `import * as electron from "electron";` と `import {app, BrowserWindow} from "electron";` くらいで OK
+- `__dirname` は Node.js を実行したディレクトリから main の js ファイルへの相対パスのため、TypeScript の場合はコンパイルされた js ファイルの位置に注意
+
+---
+
+TODO: 
 
 ---
 
