@@ -22,3 +22,8 @@ $ npm install @types/electron --save
 
 import まわりの構文で迷ったが、以下の書き方は通用した。シンプルないいサンプル。
 * [GitHub - sourcechord/electron-typescript-sample: Sample for 'Electron + TypeScript App'](https://github.com/sourcechord/electron-typescript-sample)
+
+---
+
+その他の参考リンク：
+- [Angular.jsのディレクトリ構成のベストプラクティスを探る - Qiita](http://qiita.com/n0bisuke/items/6a79d3ee63020f771260)
