@@ -25,7 +25,9 @@ node_modules の下の mocha を実行できているのは `node_modules/.bin` 
   "extends": "tslint:latest",
   "rules": {
     "max-classes-per-file": false,
-    "member-access": false
+    "member-access": false,
+    "object-literal-sort-keys": false,
+    "trailing-comma": false
   }
 }
 ```
