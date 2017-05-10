@@ -11,3 +11,14 @@
     - Angular2 か React が主流か？
 
 とりあえずハローワールドを書いてみて、また考えよう。
+
+---
+
+generator-node-typescript で作ったプロジェクトで必要なパッケージを入れて試す。electron の方は初回はファイルのダウンロードに失敗したらしかったけど２回目で成功。
+```
+$ npm install electron --save
+$ npm install @types/electron --save
+```
+
+import まわりの構文で迷ったが、以下の書き方は通用した。
+* [electron-typescript-sample/main.ts at master · sourcechord/electron-typescript-sample · GitHub](https://github.com/sourcechord/electron-typescript-sample/blob/master/main.ts)
