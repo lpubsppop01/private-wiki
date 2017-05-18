@@ -6,6 +6,7 @@
 - Emacs Friendly Keymap が頭ひとつ抜けているように思う
     - kill-ring をやめてシステムクリップボードを使用（ナイス判断）
     - `C-x 2` などのバッファ分割をサポート
+    - Undo が `C-z` なのが残念
 
 Ctrl-l でスクロール：
 - keyboard-scroll：よく紹介されており必要十分
