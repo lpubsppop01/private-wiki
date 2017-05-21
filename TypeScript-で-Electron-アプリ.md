@@ -33,5 +33,15 @@ $ npm install @types/electron --save
 
 ---
 
+Angular 2 をほどほどに勉強してきた：
+- [[Angular 2 の学習]]
+
+次は Electron との組み合わせ。
+- [ElectronとAngular2でHello World | キャスレーコンサルティング　技術ブログ](http://www.casleyconsulting.co.jp/blog-engineer/linux/electron%E3%81%A8angular2%E3%81%A7hello-world/)
+- [Angular2で書いたコードをElectronで動かしたら値がバインドできなかった話 - Qiita](http://qiita.com/amaya4869/items/38c846a470d0528e1aeb)
+- [Electron + Angular2でMarkdownでスライドを作れるプレゼンテーションツールを作っている - Please Drive Faster](http://joe-re.hatenablog.com/entry/2016/04/12/095931)
+
+---
+
 その他の参考リンク：
 - [Angular.jsのディレクトリ構成のベストプラクティスを探る - Qiita](http://qiita.com/n0bisuke/items/6a79d3ee63020f771260)
