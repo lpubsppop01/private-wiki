@@ -29,19 +29,20 @@ $ npm install @types/electron --save
 
 ---
 
-ローカル完結の Web アプリを作ってるという捉え方の方がいいのか？とも思ったけど、いちいちサーバーと通信しなくても Node.js の機能を使ってローカルリソースにアクセスできたりする手っ取り早いところもまた利点らしい。Web アプリをそのまま動かすこともできるみたいだけど、その場合は普通にポートを使うことになるし。
-
----
-
 Angular 2 をほどほどに勉強してきた：
 - [[Angular 2 の学習]]
 
-次は Electron との組み合わせ。
-- [ElectronとAngular2でHello World | キャスレーコンサルティング　技術ブログ](http://www.casleyconsulting.co.jp/blog-engineer/linux/electron%E3%81%A8angular2%E3%81%A7hello-world/)
-- [Angular2で書いたコードをElectronで動かしたら値がバインドできなかった話 - Qiita](http://qiita.com/amaya4869/items/38c846a470d0528e1aeb)
-- [Electron + Angular2でMarkdownでスライドを作れるプレゼンテーションツールを作っている - Please Drive Faster](http://joe-re.hatenablog.com/entry/2016/04/12/095931)
+次は Electron との組み合わせ。いろいろやり方はあるようだけど `ng` が気に入ったので生かす方向で。
+- [Electron + Angular2でHello, World! | backport](http://backport.net/blog/2017/02/26/electron_meets_angular2/)
+- [Integrating Electron with angular CLI : Angular2](https://www.reddit.com/r/Angular2/comments/56p5wm/integrating_electron_with_angular_cli/)
+
+開発・デバッグ中は `ng serve` した URL を `BrowserWindow.loadURL()` で開く。build も試したが electron-packager で生成した exe を実行したらエラーが出た。未解決。
 
 ---
 
 その他の参考リンク：
 - [Angular.jsのディレクトリ構成のベストプラクティスを探る - Qiita](http://qiita.com/n0bisuke/items/6a79d3ee63020f771260)
+- [ElectronとAngular2でHello World | キャスレーコンサルティング　技術ブログ](http://www.casleyconsulting.co.jp/blog-engineer/linux/electron%E3%81%A8angular2%E3%81%A7hello-world/)
+- [Angular2で書いたコードをElectronで動かしたら値がバインドできなかった話 - Qiita](http://qiita.com/amaya4869/items/38c846a470d0528e1aeb)
+- [Electron + Angular2でMarkdownでスライドを作れるプレゼンテーションツールを作っている - Please Drive Faster](http://joe-re.hatenablog.com/entry/2016/04/12/095931)
+- [React.js + Photon.css + Webpack で Electronのサンプルアプリを作ってみた - yuumi3のお仕事日記](http://yuumi3.hatenablog.com/entry/2016/05/23/112850)
