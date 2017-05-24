@@ -38,6 +38,8 @@ Angular 2 をほどほどに勉強してきた：
 
 開発・デバッグ中は `ng serve` した URL を `BrowserWindow.loadURL()` で開く。build も試したが electron-packager で生成した exe を実行したらエラーが出た。未解決。
 
+`ng new` が生成する `src/index.html` の `<base href="/">` を削除すると `BrowserWindow.loadURL()` にファイルパスを指定しても動作するようになる。
+
 ---
 
 その他の参考リンク：
