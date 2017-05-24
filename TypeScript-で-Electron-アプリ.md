@@ -47,7 +47,9 @@ $ npm install electron-packager --save-dev
 あれこれ：
 - 開発・デバッグ中は `ng serve` した URL を `BrowserWindow.loadURL()` で開く。
 - `ng new` が生成する `src/index.html` の `<base href="/">` を削除すると `BrowserWindow.loadURL()` にファイルパスを指定しても動作するようになる。
-- electron-packager は指定したディレクトリの中の node_modules を同梱するため、普通に npm build した dist ディレクトリでは exe を実行した段階でエラーが出る。
+- electron-packager で生成した exe を実行するとエラーが出るのが未解決。
+    - electron-packager は指定したディレクトリの中の node_modules を同梱するため、普通に npm build した dist ディレクトリに node_modules がないのが原因か？と思ったがコピーではだめだった。
+    - electron 用の package.json を dist にコピーする？
 
 ---
 
