@@ -36,9 +36,18 @@ Angular 2 をほどほどに勉強してきた：
 - [Electron + Angular2でHello, World! | backport](http://backport.net/blog/2017/02/26/electron_meets_angular2/)
 - [Integrating Electron with angular CLI : Angular2](https://www.reddit.com/r/Angular2/comments/56p5wm/integrating_electron_with_angular_cli/)
 
-開発・デバッグ中は `ng serve` した URL を `BrowserWindow.loadURL()` で開く。build も試したが electron-packager で生成した exe を実行したらエラーが出た。未解決。
+手順は以下のように：
+```
+$ ng new project-name
+$ cd project-name
+$ npm install electron --save
+$ npm install electron-packager --save-dev
+```
 
-`ng new` が生成する `src/index.html` の `<base href="/">` を削除すると `BrowserWindow.loadURL()` にファイルパスを指定しても動作するようになる。
+あれこれ：
+- 開発・デバッグ中は `ng serve` した URL を `BrowserWindow.loadURL()` で開く。
+- `ng new` が生成する `src/index.html` の `<base href="/">` を削除すると `BrowserWindow.loadURL()` にファイルパスを指定しても動作するようになる。
+- electron-packager は指定したディレクトリの中の node_modules を同梱するため、普通に npm build した dist ディレクトリでは exe を実行した段階でエラーが出る。
 
 ---
 
