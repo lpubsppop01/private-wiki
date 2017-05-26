@@ -92,4 +92,9 @@ $firefoxProfileDirName = GetFirefoxProfileDirName $appData
 if ($firefoxProfileDirName -ne $null) {
     BackupFiles2 $appData "Mozilla\Firefox\Profiles\${parentDirName}\bookmarks.html"
 }
+
+
+# Google Chrome Bookmarks
+$localAppData = [Environment]::GetFolderPath("LocalApplicationData")
+BackupFiles2 $localAppData "Google\Chrome\User Data\Default\Bookmarks"
 ```
