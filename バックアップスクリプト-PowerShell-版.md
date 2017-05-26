@@ -45,7 +45,7 @@ function CopyFilesWithTimeStamp($srcPath, $destPath) {
 
 function BackupFiles($srcPath) {
     $destPath = Join-Path $destRootDir ($hostname + $glueChar + (SanitizeFilename $srcPath))
-    CopyItemWithTimeStamp $srcPath $destPath
+    CopyFilesWithTimeStamp $srcPath $destPath
 }
 
 function BackupFiles2($srcBaseDir, $srcRelPath) {
@@ -64,7 +64,7 @@ function BackupFiles2($srcBaseDir, $srcRelPath) {
         mkdir $destParentDir > $null
     }
 
-    CopyItemWithTimeStamp $srcPath $destPath
+    CopyFilesWithTimeStamp $srcPath $destPath
 }
 
 function GetFirefoxProfileDirName($appData) {
@@ -90,7 +90,7 @@ BackupFiles $favorites
 $appData = [Environment]::GetFolderPath("ApplicationData")
 $firefoxProfileDirName = GetFirefoxProfileDirName $appData
 if ($firefoxProfileDirName -ne $null) {
-    BackupFiles2 $appData "Mozilla\Firefox\Profiles\${parentDirName}\bookmarks.html"
+    BackupFiles2 $appData "Mozilla\Firefox\Profiles\${firefoxProfileDirName}\bookmarks.html"
 }
 
 # Google Chrome Bookmarks
