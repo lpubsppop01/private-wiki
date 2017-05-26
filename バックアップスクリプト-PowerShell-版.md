@@ -3,6 +3,9 @@
 # Backup.ps1
 
 $destRootDir = "D:\BackupTest"
+
+#region Functions
+
 $hostname = (hostname)
 $glueChar = "_"
 
@@ -71,6 +74,8 @@ function GetFirefoxProfileDirName($appData) {
     }
     return $item.Directory.Name
 }
+
+#endregion
 
 # Documents
 $myDocs = [Environment]::GetFolderPath("MyDocuments")
