@@ -6,14 +6,12 @@
 TODO：
 - バージョン管理に未反映のローカル変更
     - TFS ならシェルブが便利だがパッチでもどうにかできないか？
+    - Visual Studio Team Services の無料枠（5 人まで）で TFS 使えるから家でも試せる
 - Visual Studio の設定はいけないか？
 - VS Code の設定
     - 確か gist か何かにバックアップする機能があったと思うが、職場では難しいだろう
 - Chocolatey の packages.config
-    - GUI だとエクスポート機能があるらしいが…
-- npm
-- パッケージ一覧系は minimul なものも管理しないと環境復元の小回りが利かない
-    - ということは手動生成か
+- npm の…なんだろう一覧？
     
 ```
 # Backup.ps1
