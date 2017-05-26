@@ -9,7 +9,12 @@ TODO：
 - Visual Studio の設定はいけないか？
 - VS Code の設定
     - 確か gist か何かにバックアップする機能があったと思うが、職場では難しいだろう
-
+- Chocolatey の packages.config
+    - GUI だとエクスポート機能があるらしいが…
+- npm
+- パッケージ一覧系は minimul なものも管理しないと環境復元の小回りが利かない
+    - ということは手動生成か
+    
 ```
 # Backup.ps1
 
