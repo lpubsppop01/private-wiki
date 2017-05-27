@@ -4,6 +4,10 @@
 - 対象の追加が単純作業であること
 - 複数のマシンで同じバックアップ先に書き込んでも競合しないこと
 
+パッケージマネージャなどのリストダンプは別スクリプト：
+- [[npm のリストダンプスクリプト PowerShell 版]]
+- [[Chocolatey のリストダンプスクリプト]]
+
 TODO：
 - バージョン管理に未反映のローカル変更
     - TFS ならシェルブが便利だがパッチでもどうにかできないか？
@@ -11,8 +15,6 @@ TODO：
 - Visual Studio の設定はいけないか？
 - VS Code の設定
     - 確か gist か何かにバックアップする機能があったと思うが、職場では難しいだろう
-- Chocolatey の packages.config
-- npm の…なんだろう一覧？
     
 ```
 # Backup.ps1
@@ -96,6 +98,7 @@ function GetFirefoxProfileDirName($appData) {
 $myDocs = [Environment]::GetFolderPath("MyDocuments")
 BackupFiles2 $myDocs "Visual Studio 2013\Projects"
 BackupFiles2 $myDocs "WindowsPowerShell"
+BackupFiles2 $myDocs "ConfigDumps"
 
 # IE Favorites
 $favorites = [Environment]::GetFolderPath("Favorites")
