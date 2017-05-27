@@ -11,7 +11,7 @@ Windows 環境で作成した howm メモが shift-jis と utf-8 が混ざった
 $here = Split-Path -Parent $MyInvocation.MyCommand.Source
 $nkf = Join-Path $here "opt\nkfwin\vc2005\win32(98,Me,NT,2000,XP,Vista,7)Windows-31J\nkf32.exe"
 
-$rootDir = "D:\Kotaro\Documents\WindowsPowerShell\jatext"
+$rootDir = "TARGET"
 $filenamePattern = ".*\.(txt|howm)"
 
 $message_Done     = "Done      :"
