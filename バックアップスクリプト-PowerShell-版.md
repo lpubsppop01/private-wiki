@@ -13,3 +13,6 @@ TODO：
     - Visual Studio Team Services の無料枠（5 人まで）で TFS 使えるから家でも試せる
 - VS Code の設定
     - 確か gist か何かにバックアップする機能があったと思うが、職場では難しいだろう
+        - [Visual Studio Code 入門～導入から Gist による設定管理まで～ - 雀巽の日記帳](http://necojackarc.hatenablog.com/entry/2017/03/12/184557)
+    - こちらの方が現実的
+        - [Visual Studio Code のユーザ設定を複数PCで使いまわす（Dropbox経由） - Qiita](http://qiita.com/_meki/items/d8e90fecbfc4b9da89b5)
