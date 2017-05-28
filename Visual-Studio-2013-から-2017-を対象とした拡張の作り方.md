@@ -22,3 +22,8 @@ vs2017 でビルドして vs2013 でも動作すればよさそう。
 - 上記の null 参照エラーの件は AnyTextFilter でテキストエディタからフォントを取得する処理が失敗したからみたい。フォント未設定で [IVsFontAndColorStorage.GetFont](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getfont.aspx) を呼んだとき成功しなくなったか、もしくは単にフォント未設定のときの動作確認が漏れてた。ちゃんと返り値を見ていれば問題ない。
 - `sln`、`csproj` ファイルの他、`vsixmanifest` ファイルもアセンブリバージョンの記載を伴う必須項目が増えているので分けたい。
     - と思ったが `source.extension.vsixmanifest` というファイル名が固定のようでうまくいかない。どうしたものか。
+
+---
+
+参考として EmacsKeys の vs2017 対応 fork:
+- [modified for VS2017](https://github.com/yosagi/EmacsKeys/commit/dd267f0d92791e0deaf37be011a7e8505620d809)
