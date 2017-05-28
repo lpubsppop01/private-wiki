@@ -15,3 +15,7 @@ vs2017 で：
 - 設定までは問題ないように見えたが、実際に sed を使おうとしたところ「値を null にすることはできません」的なエラーメッセージが表示された
 
 vs2017 でビルドして vs2013 でも動作すればよさそう。
+
+---
+
+上記の null 参照エラーの件は AnyTextFilter でテキストエディタからフォントを取得する処理が失敗したからみたい。フォント未設定で [IVsFontAndColorStorage.GetFont](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getfont.aspx) を呼んだとき成功しなくなったか、もしくは単にフォント未設定のときの動作確認が漏れてた。ちゃんと返り値を見ていれば問題ない。
