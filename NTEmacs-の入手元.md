@@ -1,0 +1,9 @@
+# NTEmacs の入手元
+NTEmacs（Emacs の Windows バイナリ）の入手元。
+- 25.2
+    - [chuntaro/NTEmacs64](https://github.com/chuntaro/NTEmacs64)
+        - MSYS2 でビルド
+        - `-mtune=corei7` なので AMD CPU では動かないかも
+    - [NTEmacsビルド(25.2)](http://cha.la.coocan.jp/doc/NTEmacsBuild252.html)
+        - MSYS2 でビルド
+        - `-mtune=pentium4`
