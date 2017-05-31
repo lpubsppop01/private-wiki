@@ -33,3 +33,6 @@ vs2017 でビルドして vs2013 でも動作すればよさそう。
 
 参考として EmacsKeys の vs2017 対応 fork:
 - [modified for VS2017](https://github.com/yosagi/EmacsKeys/commit/dd267f0d92791e0deaf37be011a7e8505620d809)
+
+いいのが見つかった：
+- [How do I build a Visual Studio Extension (VSIX) that targets Visual Studio 2010-2017 - Stack Overflow](https://stackoverflow.com/questions/42269556/how-do-i-build-a-visual-studio-extension-vsix-that-targets-visual-studio-2010)
