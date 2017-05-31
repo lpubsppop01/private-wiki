@@ -28,6 +28,10 @@ vs2017 でビルドして vs2013 でも動作すればよさそう。検証用�
 - [How do I build a Visual Studio Extension (VSIX) that targets Visual Studio 2010-2017 - Stack Overflow](https://stackoverflow.com/questions/42269556/how-do-i-build-a-visual-studio-extension-vsix-that-targets-visual-studio-2010)
 - [How to: Migrate Extensibility Projects to Visual Studio 2017 | Microsoft Docs](https://docs.microsoft.com/en-us/visualstudio/extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017)
 - [It’s time to change the VSIX manifest of your extension to v3 for Visual Studio 2017 compatibility | Visual Studio Extensibility (VSX)](http://www.visualstudioextensibility.com/2017/01/10/its-time-to-change-the-vsix-manifest-of-your-extension-to-v3-for-visual-studio-2017-compatibility/)
+- [VS Package targeting multiple versions, including VS 2017](https://social.msdn.microsoft.com/Forums/vstudio/en-US/cf2833a0-c91b-48e7-ac73-cb79b6fd3971/vs-package-targeting-multiple-versions-including-vs-2017?forum=vsx)
+
+前のバージョンだけど一応：
+- [c# - How to package a VSIX-based extension for multiple Visual Studio versions - Stack Overflow](https://stackoverflow.com/questions/20214796/how-to-package-a-vsix-based-extension-for-multiple-visual-studio-versions)
 
 ---
 
