@@ -33,6 +33,9 @@ vs2017 でビルドして vs2013 でも動作すればよさそう。検証用�
 前のバージョンだけど一応：
 - [c# - How to package a VSIX-based extension for multiple Visual Studio versions - Stack Overflow](https://stackoverflow.com/questions/20214796/how-to-package-a-vsix-based-extension-for-multiple-visual-studio-versions)
 
+これはいけそう。ありがたや。
+https://www.kekyo.net/2016/12/04/6131
+
 ---
 
 参考として EmacsKeys の vs2017 対応 fork:
