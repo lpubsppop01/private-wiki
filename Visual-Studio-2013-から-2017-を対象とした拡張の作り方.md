@@ -24,19 +24,24 @@ vs2017 でビルドして vs2013 でも動作すればよさそう。検証用�
 
 ---
 
-そのままのページが割とヒットするが、マニフェストの話に終始している：
+下記を参考にいけた。
+- [回転寿司をVisual Studioに降臨させる – Visual Studio Advent Calendar 2016 – kekyoの丼](https://www.kekyo.net/2016/12/04/6131)
+
+以下の２点がポイント：
+- マニフェストファイルのバージョンを 3 系にするため vs2017 でビルド
+- .NET Framework のバージョンを 4.5 にする
+    - vs2017 標準の VSSDK を参照すると 4.6 以降が要求される
+    - Nuget で VSSDK を検索するとたくさんヒットするので、都合の良いアセンブリをインストール
+
+---
+
+その他参考。たびたび話題になるようだけど、上の回転寿司に勝るページはなかった。
+
+参考として EmacsKeys の vs2017 対応 fork:
+- [modified for VS2017](https://github.com/yosagi/EmacsKeys/commit/dd267f0d92791e0deaf37be011a7e8505620d809)
+
+マニフェストの話に終始している：
 - [How do I build a Visual Studio Extension (VSIX) that targets Visual Studio 2010-2017 - Stack Overflow](https://stackoverflow.com/questions/42269556/how-do-i-build-a-visual-studio-extension-vsix-that-targets-visual-studio-2010)
 - [How to: Migrate Extensibility Projects to Visual Studio 2017 | Microsoft Docs](https://docs.microsoft.com/en-us/visualstudio/extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017)
 - [It’s time to change the VSIX manifest of your extension to v3 for Visual Studio 2017 compatibility | Visual Studio Extensibility (VSX)](http://www.visualstudioextensibility.com/2017/01/10/its-time-to-change-the-vsix-manifest-of-your-extension-to-v3-for-visual-studio-2017-compatibility/)
 - [VS Package targeting multiple versions, including VS 2017](https://social.msdn.microsoft.com/Forums/vstudio/en-US/cf2833a0-c91b-48e7-ac73-cb79b6fd3971/vs-package-targeting-multiple-versions-including-vs-2017?forum=vsx)
-
-前のバージョンだけど一応：
-- [c# - How to package a VSIX-based extension for multiple Visual Studio versions - Stack Overflow](https://stackoverflow.com/questions/20214796/how-to-package-a-vsix-based-extension-for-multiple-visual-studio-versions)
-
-これはいけそう。ありがたや。
-https://www.kekyo.net/2016/12/04/6131
-
----
-
-参考として EmacsKeys の vs2017 対応 fork:
-- [modified for VS2017](https://github.com/yosagi/EmacsKeys/commit/dd267f0d92791e0deaf37be011a7e8505620d809)
