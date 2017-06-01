@@ -7,3 +7,4 @@ NTEmacs（Emacs の Windows バイナリ）の入手元。
     - [NTEmacsビルド(25.2)](http://cha.la.coocan.jp/doc/NTEmacsBuild252.html)
         - MSYS2 でビルド
         - `-mtune=pentium4`
+        - 元々使っていた 24 系とパッチが違うらしく、日本語入力はできるもののあまりいい感じではない
