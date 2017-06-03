@@ -15,3 +15,4 @@
             - Listener の登録を解除してない気がする
         - [プログラミングTips : クリップボードの変化の検知を簡単に](http://www.geocities.jp/iooiau/tips/watchclipboard.html)
     - しかし kill-ring 自体オミットした方がいい結果になるような気もする
+        - いや、この問題は kill-ring ではなくバッファの問題だから関係ないか
