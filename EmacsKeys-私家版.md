@@ -10,3 +10,8 @@
     - おそらくコピーとペーストが別々のビューのときに起こりうる
     - kill-ring の管理はビュー毎（使わないから憶測だけど Emacs がバッファ毎に管理なのかも）
     - 使用中の私家版はペースト前にバッファをフラッシュしているため、ペーストするビューのバッファに何か入っているとその内容で上書きされる、と考えられる
+    - クリップボードを監視してバッファをクリアする？
+        - [NuGet Gallery | ClipboardMonitor 0.3.0](https://www.nuget.org/packages/ClipboardMonitor/)
+            - Listener の登録を解除してない気がする
+        - [プログラミングTips : クリップボードの変化の検知を簡単に](http://www.geocities.jp/iooiau/tips/watchclipboard.html)
+    - しかし kill-ring 自体オミットした方がいい結果になるような気もする
