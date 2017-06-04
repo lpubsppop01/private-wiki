@@ -6,14 +6,10 @@
 - vs2017 に移行（vs2013 以降で動作するように）
 - kill-line 後にペーストすると挿入される内容が古い
     - 以前から使用している私家版では対策しているが下記の通り問題あり
-- （未）コピー＆ペーストしたとき意図しない内容が挿入される場合がある
+- コピー＆ペーストしたとき意図しない内容が挿入される場合がある
     - おそらくコピーとペーストが別々のビューのときに起こりうる
     - キルされた文字列のバッファ（以下、キルバッファ）、マークはビュー毎に管理されている
         - `ITextView.Properties.GetOrCreateSingletonProperty()`
     - ClipboardRing（kill-ring）は全体でひとつ（Service として取得された EmacsCommandsManager がひとつだけ保持）
     - 使用中の私家版はペースト前にキルバッファをフラッシュしているため、ペーストするビューのバッファに何か入っているとその内容で上書きされる、と考えられる
-    - クリップボードを監視してバッファをクリアする？
-        - [NuGet Gallery | ClipboardMonitor 0.3.0](https://www.nuget.org/packages/ClipboardMonitor/)
-            - Listener の登録を解除してない気がする
-        - [プログラミングTips : クリップボードの変化の検知を簡単に](http://www.geocities.jp/iooiau/tips/watchclipboard.html)
-    - コピーしたタイミングで他のビューのキルバッファを kill-ring に書き出してクリアするのがよさげ？
+    - ビューからフォーカスが外れた時にもフラッシュするようにした
