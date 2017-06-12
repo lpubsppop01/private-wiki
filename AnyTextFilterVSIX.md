@@ -212,6 +212,8 @@ Emacs の scratch バッファみたいな感じに気楽に C# を実行して�
 
 - VS のテーマに合わせようとしてみたが、割に合わな過ぎてやめた。
 
+- コマンド実装の中にある対象取得→フィルタ実行までの流れをクラスに切り出したいが、名称が浮かばない。FilterRunner はすでにあるし、対象を選択するのは Runner ではない。Cordinater とか Process とか。FilterRunningProcess が FilterRunner を呼び出すのはあんまり直観的ではない気がする。逆な気が。
+
 ---
 
 VSCode だけど以下はほぼ同じコンセプトの先達。
