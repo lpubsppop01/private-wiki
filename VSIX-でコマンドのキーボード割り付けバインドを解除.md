@@ -1,6 +1,7 @@
 # VSIX でコマンドのキーボード割り付けを解除
 VSIX でコマンドのキーボード割り付けを解除する試行。
-`Ctrl-H` は以下でいけたが `Ctrl-K` は例外が出るものがあり、またキーイベントを拾えなかった。
+- `Ctrl-H` は以下でいけたが `Ctrl-K` は例外が出るものがあり、またキーイベントを拾えなかった
+- 実験的インスタンスで実行するとデバッグ実行している通常インスタンスの設定も変更されるので注意
 ```csharp
 var dte = Package.GetGlobalService(typeof(EnvDTE.DTE)) as EnvDTE.DTE;
 foreach (EnvDTE.Command command in dte.Commands)
