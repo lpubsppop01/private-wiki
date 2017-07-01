@@ -47,3 +47,9 @@ foreach (EnvDTE.Command command in dte.Commands)
     }
 }
 ```
+
+---
+
+参考リンク：
+- [Microsoft Visual Studio 2012 Unleashed - Mike Snell, Lars Powers - Google ブックス](https://books.google.co.jp/books?id=jAGP1lrJ2QYC&pg=PT796&lpg=PT796&dq=envdte.command+bindings&source=bl&ots=jg7EvM7h7b&sig=yBsQoWDyxS11QPQwQtriNxxbpDc&hl=ja&sa=X&ved=0ahUKEwiGm5-_quPUAhWDTLwKHdiFBjI4ChDoAQg2MAM#v=onepage&q=envdte.command%20bindings&f=false)
+- [envdte - Remove a keyboard shortcut binding in Visual Studio using Macros - Stack Overflow](https://stackoverflow.com/questions/2324550/remove-a-keyboard-shortcut-binding-in-visual-studio-using-macros)
