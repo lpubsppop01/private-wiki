@@ -2,6 +2,7 @@
 Chocolatey で anaconda3 をインストールで OK。
 - [2行でpythonインストール@Windows - Qiita](http://qiita.com/u1and0/items/d63546c0d64eceab6b41)
 - 7 分程度で完了した。timeout はデフォルトでもたぶん問題なさそう。
+    - SSD だったからかも
 - スタートメニューから Jupyter Notebook を起動で問題なく動作した。
 - conda コマンドに PATH が通っていないのでそこだけ要設定。
     - `C:\tools\Anaconda3\Scripts`
