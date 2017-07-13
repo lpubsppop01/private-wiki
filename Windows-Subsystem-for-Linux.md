@@ -19,6 +19,15 @@ X 動かせば GUI もいけるらしい。
 - ロケールが日本語だと化けるため `sudo update-locale LANG=en_US.UTF8` で英語に変更。
 - Windows 用の X サーバとしては VcXsrv というのが流行りらしい。Chocolatey にパッケージもあり。
 - `sudo: unable to resolve host` は `/etc/hosts` に追記で改善する。
+- X で端末を表示。あっさり動いた。
+    - Windows 側で `cinst vcxsrv`
+    - `apt-get install fluxbox mlterm`
+        - fluxbox は不要だった。どうも VcXsrv だけで Windows のウィンドウマネージャと統合した動きになっている。
+    - `export DISPLAY=localhost:0.0`
+        - `~/.bashrc` に追記しておく。
+    - `mlterm &`
+- VS Code をインストールしてみたが画面に表示されず。Electron がまだ NG らしい。
+    - [LinuxでVisual Studio Codeを起動する | VS Code Docs](https://vscode-doc-jp.github.io/docs/setup/linux.html)
 
 ------------------------------------------------------------------------
 
