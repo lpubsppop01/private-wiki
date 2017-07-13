@@ -18,6 +18,7 @@ Windows 上での Python があまりに扱いづらいので実用を目指し�
 X 動かせば GUI もいけるらしい。
 - ロケールが日本語だと化けるため `sudo update-locale LANG=en_US.UTF8` で英語に変更。
 - Windows 用の X サーバとしては VcXsrv というのが流行りらしい。Chocolatey にパッケージもあり。
+- `sudo: unable to resolve host` は `/etc/hosts` に追記で改善する。
 
 ------------------------------------------------------------------------
 
