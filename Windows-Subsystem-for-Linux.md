@@ -28,6 +28,7 @@ X 動かせば GUI もいけるらしい。
     - `mlterm &`
 - VS Code をインストールしてみたが画面に表示されず。Electron がまだ NG らしい。
     - [LinuxでVisual Studio Codeを起動する | VS Code Docs](https://vscode-doc-jp.github.io/docs/setup/linux.html)
+    - 起動時のエラーメッセージに従い `libx11-xcb1` と `libxss` をインストールしたが結局無言で終了するようになった
 
 ------------------------------------------------------------------------
 
