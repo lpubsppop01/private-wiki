@@ -1,5 +1,7 @@
 # Visual Studio 2010 のキーバインド設定
-`[2009-10-24 22:02]` 
+Visual Studio 2013/2017 のキーバインド設定メモ。
+- リンクの都合があるのでタイトルはそのまま。
+- 元の howm メモの作成日時は `[2009-10-24 22:02]` らしい。
 
 私家版 EmacsKeys を利用する前提。
 - [lpubsppop01/EmacsKeys: Emacs key bindings for Visual Studio](https://github.com/lpubsppop01/EmacsKeys)
