@@ -8,3 +8,5 @@ ripgrep は超高速でナイスなんだけど、いけてる GUI ラッパー�
 まず .NET の Process クラスっぽいことを Node.js でできないか。
 - [Node.jsで子プロセスの標準入出力を処理する - 情報アイランド](http://info-i.net/child-process-spawn-stdio)
 - [Child Process | Node.js v8.6.0 Documentation](https://nodejs.org/api/child_process.html)
+
+普通にできるようなので angular2 + electron でやってみようか。
