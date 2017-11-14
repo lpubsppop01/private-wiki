@@ -19,3 +19,4 @@ Admin-PS> cinst haxe
 - [Targeting the C# Platform - Haxe](http://old.haxe.org/doc/targets/csharp)
 
 特に問題なくソースと exe まで生成されたが、ソースの方は unchecked を使った強引な実装になっていた。ちょっときついかも。
+あと、しかたないのだと思うけど Lower Camel が Upper Camel に変換されたりはしない。
