@@ -9,7 +9,7 @@
 - [jcward/vscode-hxcpp-debug: VSC debug adapter for Haxe hxcpp runtime](https://github.com/jcward/vscode-hxcpp-debug)
     - C++ 版だけど日付を見るに開発停止してそう
     - サンプルの "test cli" をコピーして正常動作を確認した
-    - 動作するのはうれしいけど C++ 版はビルド時間が長いなぁ
+    - C++ 版は初回ビルド時間が長いが、プロジェクト内のファイルを編集しただけなら 2 回目以降は速い
 - [Unit testing](https://haxe.org/manual/std-unit-testing.html)
     - 標準ライブラリにシンプルな単体テストフレームワークが含まれている
     - この感じだとデバッガとの組み合わせも簡単そう
