@@ -6,3 +6,5 @@
     - 準備が必要だけど説明はしっかりしている
     - Flash のデバッガーが exe を直にダウンロードなのにちょっとびっくりした
     - Java は Chocolatey で jdk9 をインストール
+    - 単純な trace を置いただけの main ではブレークできなかった
+- [jcward/vscode-hxcpp-debug: VSC debug adapter for Haxe hxcpp runtime](https://github.com/jcward/vscode-hxcpp-debug)
