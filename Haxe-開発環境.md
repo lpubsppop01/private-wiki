@@ -5,9 +5,11 @@
     - 準備が必要だけど説明はしっかりしている
     - Flash のデバッガーが exe を直にダウンロードなのにちょっとびっくりした
     - Java は Chocolatey で jdk9 をインストール
-    - 単純な trace を置いただけの main ではブレークできなかった
+    - queueSend が定義されてないとかのエラーでブレークできなかった
 - [jcward/vscode-hxcpp-debug: VSC debug adapter for Haxe hxcpp runtime](https://github.com/jcward/vscode-hxcpp-debug)
     - C++ 版だけど日付を見るに開発停止してそう
+    - サンプルの "test cli" をコピーして正常動作を確認した
+    - 動作するのはうれしいけど C++ 版はビルド時間が長いなぁ
 - [Unit testing](https://haxe.org/manual/std-unit-testing.html)
     - 標準ライブラリにシンプルな単体テストフレームワークが含まれている
     - この感じだとデバッガとの組み合わせも簡単そう
