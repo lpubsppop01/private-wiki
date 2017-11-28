@@ -22,3 +22,4 @@ FlashDevelop 上で SDK インストール：
     - Project ペインでフォルダを追加
     - プロジェクトプロパティでクラスパスを追加
         - 追加すると Compiler Options の Main Class がクリアされるのでそちらも再設定
+- 複数のターゲットを設ける場合は hxml ファイルを使うのであまり関係ないかも
