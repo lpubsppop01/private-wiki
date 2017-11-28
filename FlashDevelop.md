@@ -24,5 +24,6 @@ FlashDevelop 上で SDK インストール：
     - プロジェクトプロパティでクラスパスを追加（hxml を使う場合は不要と思う）
         - 追加すると Compiler Options の Main Class がクリアされるのでそちらも再設定
 - hxml ファイルを使ってビルドする場合：
+    - `build.hxml` などをプロジェクトフォルダに追加
     - プロジェクトプロパティで Compile Target を Custom Build に変更
     - Build Command の Pre Build に `haxe $(ProjectDir)\build.hxml` を追加
