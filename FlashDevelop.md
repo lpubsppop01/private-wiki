@@ -27,3 +27,4 @@ FlashDevelop 上で SDK インストール：
     - `build.hxml` などをプロジェクトフォルダに追加
     - プロジェクトプロパティで Compile Target を Custom Build に変更
     - Build Command の Pre Build に `haxe $(ProjectDir)\build.hxml` を追加
+- 最終的には hxml を使うにしても開発中は hxproj だけで十分かもしれない
