@@ -29,6 +29,7 @@ SDK のパッケージ管理が Chocolatey と競合しそうなのが少し残�
 FlashDevelop は本家からインストーラか zip アーカイブをダウンロード。
 - Chocolatey の FlashDevelop はパッケージが古いままになっている。
 - Java は Haxe でも必要なときがあるので JRE 8 x86 をインストール（JRE 9 には x64 しかない）。
+    - `JAVA_HOME` を　x86 の方に通しておく。
 - Japanese も選べるが English にしてみた。
 - Chocolatey の Haxe は検出されない。おとなしく FlashDevelop からもインストール。
 - 5.3 系は Flash デバッガが動作しない。（[jni4net のバグ？](https://github.com/fdorg/flashdevelop/issues/1787)）
