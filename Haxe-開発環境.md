@@ -31,3 +31,5 @@ FlashDevelop は本家からインストーラか zip アーカイブをダウ�
 - Java は Haxe でも必要なときがあるので JRE 8 x86 をインストール（JRE 9 には x64 しかない）。
 - Japanese も選べるが English にしてみた。
 - Chocolatey の Haxe は検出されない。おとなしく FlashDevelop からもインストール。
+- 5.3 系は Flash デバッガが動作しない。（[jni4net のバグ？](https://github.com/fdorg/flashdevelop/issues/1787)）
+    - 直るまでに時間がかかる感じ？この分だとインストーラより zip で過去バージョンを残しながら使った方がいい。
