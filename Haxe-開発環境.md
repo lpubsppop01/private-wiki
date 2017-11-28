@@ -28,6 +28,6 @@ SDK のパッケージ管理が Chocolatey と競合しそうなのが少し残�
 
 FlashDevelop は本家からインストーラか zip アーカイブをダウンロード。
 - Chocolatey の FlashDevelop はパッケージが古いままになっている。
-- Java は Flex や ActionScript に必要だそうで、Haxe には不要だろう。
+- Java は Haxe でも必要なときがあるので JRE 8 x86 をインストール（JRE 9 には x64 しかない）。
 - Japanese も選べるが English にしてみた。
 - Chocolatey の Haxe は検出されない。おとなしく FlashDevelop からもインストール。
