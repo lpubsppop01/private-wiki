@@ -21,4 +21,4 @@ FlashDevelop 上で SDK インストール：
 - 単体テストを `test` フォルダに格納する場合：
     - Project ペインでフォルダを追加
     - プロジェクトプロパティでクラスパスを追加
-    - `Main.hx` を移動するとプロジェクトプロパティの Compiler Options / Main Class がクリアされるので再設定
+        - 追加すると Compiler Options の Main Class がクリアされるのでそちらも再設定
