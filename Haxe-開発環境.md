@@ -23,3 +23,11 @@
 
 FlashDevelop がかなりよくできているらしい（実際プロジェクト内の rename はちゃんと効いた）。
 SDK のパッケージ管理が Chocolatey と競合しそうなのが少し残念だけど、移行を考え中。
+
+---
+
+FlashDevelop は本家からインストーラか zip アーカイブをダウンロード。
+- Chocolatey の FlashDevelop はパッケージが古いままになっている。
+- Java は Flex や ActionScript に必要だそうで、Haxe には不要だろう。
+- Japanese も選べるが English にしてみた。
+- Chocolatey の Haxe は検出されない。おとなしく FlashDevelop からもインストール。
