@@ -1,6 +1,7 @@
 # タイムスタンプテキストを更新する PowerShell スクリプト
 書いてはみた。文字コード・改行コードまわりはまだいい加減。
-VS Code の Run on Save と組み合わせようと思ったが、更新後にエディタが再読み込みしてくれないとうまくいかないかも。
+一応 VS Code の Run on Save と組み合わせて Emacs の time-stamp っぽい動きになる。
+でも更新後にエディタが再読み込みするのを待つわけで、ちょっとタイミングずれる。
 
 ```powershell
 # UpdateTimestampField.ps1
