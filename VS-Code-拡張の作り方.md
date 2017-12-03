@@ -12,5 +12,7 @@ Emacs の time-stamp みたいなことをするシンプルな拡張を作る�
     - [Packaging Extensions](https://code.visualstudio.com/docs/extensions/publish-extension#_packaging-extensions)
     - [Install from a VSIX](https://code.visualstudio.com/docs/editor/extension-gallery#_install-from-a-vsix)
         - 本体 GUI にも「VSIX からのインストール…」がある。
+    - CI はまだやっていないがやりたい。Travis CI を考えていたが Artifact を標準ではサポートしていない？らしいので　AppVeyor の方向で。
+        - [Testing with Node.js and io.js | AppVeyor](https://www.appveyor.com/docs/lang/nodejs-iojs/)
 - とりあえず初版ができた。しばらく使って様子見。
     - [lpubsppop01/vscode-auto-timestamp: A Visual Studio Code extension that update timestamp field when saving document.](https://github.com/lpubsppop01/vscode-auto-timestamp)
