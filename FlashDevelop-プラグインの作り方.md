@@ -10,3 +10,6 @@ FlashDevelop のプラグインの作り方調査。目標は Emacs ライクキ
   - これのインスタンスを取得できればいい？UITools.Manager.OnTextChanged の引数に普通にある。あまりラップされている感じではない。
   - UITools の HandleKeys() に `PluginBase.MainForm.CallCommand("InsertSnippet", "null");` という呼び出しがある。コマンドはこう呼びだされる？
   - いやひょっとしてコマンド云々はあまり関係なくて、`EventType.Keys` を捕まえればそれでいいのか？
+    - UITools 自体もプラグインと同じレベルでイベントを拾っているっぽい。
+    - プラグインは EventManager.eventObjectsSnapshot 配列に入ってる？直ではないかもだけど。
+  - 方針は IPlugin を実装したプラグイン実装クラスに HandleEvent メソッドを設けてキーイベントを拾う、でよさそう。しかしデバッグ実行がやりづらそう。一応止まるけどコードとの対応付けができてないっぽい。
