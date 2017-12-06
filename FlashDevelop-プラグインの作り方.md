@@ -7,4 +7,6 @@ FlashDevelop のプラグインの作り方調査。目標は Emacs ライクキ
 - FlashDevelop.exe と同じフォルダにある PluginCore.dll という .NET DLL をリンクする。
   - ILSpy で中を見るといろいろ詰め込まれている中に ScintillaNet というのがある。
   - ScintillaNet.ScintillaControl がエディタっぽい。有名らしい。
-  - これのインスタンスを取得できればいい、ということだろうか。またはラップしているやつ。
+  - これのインスタンスを取得できればいい？UITools.Manager.OnTextChanged の引数に普通にある。あまりラップされている感じではない。
+  - UITools の HandleKeys() に `PluginBase.MainForm.CallCommand("InsertSnippet", "null");` という呼び出しがある。コマンドはこう呼びだされる？
+  - いやひょっとしてコマンド云々はあまり関係なくて、`EventType.Keys` を捕まえればそれでいいのか？
