@@ -13,5 +13,7 @@ FlashDevelop のプラグインの作り方調査。目標は Emacs ライクキ
     - UITools 自体もプラグインと同じレベルでイベントを拾っているっぽい。
     - プラグインは EventManager.eventObjectsSnapshot 配列に入ってる？直ではないかもだけど。
     - `PluginBase.MainForm.IgnoredKeys` にキーを入れておくとメインフォームで処理されずにプラグイン側でどうこうできるということか？
-  - 方針は IPlugin を実装したプラグイン実装クラスに HandleEvent メソッドを設けてキーイベントを拾う、でよさそう。しかしデバッグ実行がやりづらそう。一応止まるけどコードとの対応付けができてないっぽい。
+  - 方針は IPlugin を実装したプラグイン実装クラスに HandleEvent メソッドを設けてキーイベントを拾う、でよさそう。
+    - 本当に問題なさそうだった。ScintillaControl の癖が分かればいける。
 - .NET FW のバージョンは従来 3.5 で FlashDevelop 5.3 から 4.0 に上げられた。ILSpy で見ると 2.0 なんだけど、合わせて 2.0 で作るとエラーが出る。3.5 でいい。
+- FlashDevelop 5.2 の ZIP 版を展開して Plugins フォルダにビルド結果を出力し、FlashDevelop.exe をデバッグ起動で開発に支障はなさそうだった。
