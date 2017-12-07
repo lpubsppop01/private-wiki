@@ -14,4 +14,4 @@ FlashDevelop のプラグインの作り方調査。目標は Emacs ライクキ
     - プラグインは EventManager.eventObjectsSnapshot 配列に入ってる？直ではないかもだけど。
     - `PluginBase.MainForm.IgnoredKeys` にキーを入れておくとメインフォームで処理されずにプラグイン側でどうこうできるということか？
   - 方針は IPlugin を実装したプラグイン実装クラスに HandleEvent メソッドを設けてキーイベントを拾う、でよさそう。しかしデバッグ実行がやりづらそう。一応止まるけどコードとの対応付けができてないっぽい。
-- .NET FW のバージョンは従来 2.0 で FlashDevelop 5.3 から 4.0 に上げられた。5.3 は Flash デバッガが動かん問題があるんだよね…。
+- .NET FW のバージョンは従来 3.5 で FlashDevelop 5.3 から 4.0 に上げられた。ILSpy で見ると 2.0 なんだけど、合わせて 2.0 で作るとエラーが出る。3.5 でいい。
