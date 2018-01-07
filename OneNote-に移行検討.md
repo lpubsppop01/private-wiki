@@ -13,3 +13,5 @@
 - Markdown
     - [Gem for OneNote v43.1.1.269 - Office OneNote Gem Add-Ins](https://www.onenotegem.com/gem-for-onenote.html)
     - 便利そうではあるが結局 Android や Web からは使えないので Evernote Web + Markdown Here より優位にはならない
+    - お金払うなら Inkdrop を考えた方がいいだろうし他にもいろいろあるみたい
+        - [ハッカー向けノートアプリ「Inkdrop」は最高に使いやすいメモ帳ツールだった | Web Design Trends](https://webdesign-trends.net/entry/4163)
