@@ -10,3 +10,6 @@
     - Windows 10 標準アプリの "OneNote"
     - Office 2016 ファミリーの "OneNote 2016"
         - https://www.onenote.com/download からダウンロード可（無料）
+- Markdown
+    - [Gem for OneNote v43.1.1.269 - Office OneNote Gem Add-Ins](https://www.onenotegem.com/gem-for-onenote.html)
+    - 便利そうではあるが結局 Android や Web からは使えないので Evernote Web + Markdown Here より優位にはならない
