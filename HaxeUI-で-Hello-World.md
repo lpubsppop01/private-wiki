@@ -19,7 +19,7 @@ HaxeUI は OpenFL で描画する仕組みだそうで、本体以外にもい�
 - [cannot use haxeui - Google グループ](https://groups.google.com/forum/#!topic/haxelang/pBCoUhGDvfY)
 - [haxeui/haxeui-core: The core library of the HaxeUI framework -](https://github.com/haxeui/haxeui-core)
 
-しかし最新だとビルドが通っていないらしい。時期尚早か、停滞気味なのか。
-
-HaxeUI の他に StablexUI というのもあるらしいけど、やはり単純な GUI アプリを作るのに Haxe は向いてないか。
-IME まわりで引っかかる可能性高いだろうし。
+多少の手直しは必要だったが FlashDevelop の OpenFL プロジェクトテンプレートに上記の hello_world に含まれる Main.hx と main.xml、snippet.xml を混ぜて動作を確認した。
+html5、flash、windows の３つで動作を確認。
+windows 構成だと exe を生成できたが、どうも OpenFL に関係するモジュールも一通りコンパイルしたらしく時間がかかった（たぶん10分くらい）。
+全部表示がぼやけた感じだったのが気になったが、これは DPI 大きめのノートで作業していたからかもしれない。
