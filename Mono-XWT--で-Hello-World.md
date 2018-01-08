@@ -6,5 +6,6 @@ vs2017 on win10pro にてあれこれ。
 - サイトにあるサンプルコードはそのままだとウィンドウを閉じてもプロセスが終わらない
     - `mainWindow.Closed` で `Application.Exit()` を呼べば OK
 - mono の xbuild でもビルドできたが実行は OutOfMemoryException でだめ
+- もう元気なくなったので今度にするが wsl で動くか試したい
 
 Eto も試してよさそうな感じだったのだけど、拡張が vs2015 で止まっているのが気になった。
