@@ -13,3 +13,7 @@ Windows SDK のバージョンを 10 系に上げてインクルードパスと�
 今どきのはこれか。
 - [NuGet Gallery | Microsoft.DiaSymReader 1.2.0](https://www.nuget.org/packages/Microsoft.DiaSymReader)
     - [dotnet/symreader: Managed definitions for COM interfaces exposed by DiaSymReader APIs](https://github.com/dotnet/symreader)
+
+なんかまだあるっぽい。
+- [Big picture on Symbol APIs – Mike Stall's .NET Debugging Blog](https://blogs.msdn.microsoft.com/jmstall/2005/10/08/big-picture-on-symbol-apis/)
+眠いのでまた今度。
