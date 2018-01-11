@@ -7,3 +7,9 @@ pdb の情報を読み取る（書き込みも？）公式のライブラリ。
 とりあえず上記の DIA SDK はサンプルが `C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\DIA SDK\Samples\DIA2Dump` にある。
 そのままだと include のパスに問題があるためビルドできない。
 Windows SDK のバージョンを 10 系に上げてインクルードパスとライブラリパスを標準の場所を含むように直せばビルドできる。
+
+---
+
+今どきのはこれか。
+- [NuGet Gallery | Microsoft.DiaSymReader 1.2.0](https://www.nuget.org/packages/Microsoft.DiaSymReader)
+    - [dotnet/symreader: Managed definitions for COM interfaces exposed by DiaSymReader APIs](https://github.com/dotnet/symreader)
