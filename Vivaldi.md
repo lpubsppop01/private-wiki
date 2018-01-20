@@ -10,3 +10,4 @@ Windows 環境前提でいろいろと設定など。
     - タブで表示位置を左、タブサムネイルを無効にすると TreeStyleTab ライクな見た目になる。
 - NoScript 代替は ScriptSafe（Vivaldi では Chrome の拡張が使える）。
 - Copy as Markdown のボタンを押したら再読み込みがかかった？
+- 開いているタブの保存はデフォルトで効いている。
