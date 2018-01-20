@@ -16,3 +16,4 @@
     - お金払うなら Inkdrop を考えた方がいいだろうし他にもいろいろあるみたい
         - [ハッカー向けノートアプリ「Inkdrop」は最高に使いやすいメモ帳ツールだった | Web Design Trends](https://webdesign-trends.net/entry/4163)
         - [Dropbox Paperが想像以上に良かった話 - MInor CoNtrol](http://micn.hatenablog.com/entry/2017/04/20/dropbox-paper)
+- 範囲選択からコピーすると文末にスペースか制御文字？が入る。地味に手間が増える。
