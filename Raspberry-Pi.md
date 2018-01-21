@@ -4,6 +4,7 @@
     - [Raspberry Pi - Wikipedia](https://ja.wikipedia.org/wiki/Raspberry_Pi)
     - [トップページ - スイッチサイエンス](https://www.switch-science.com/)
         - Amazon はぼったくり価格なのでこちらで入荷を待った方がいいというようなことが参考サイトのどれかに書かれてた。
+    - [Raspberry Pi3が通販で買える店（技適についても） - Qiita](https://qiita.com/kouichirou/items/3e9c4a0755cdda2c09bd)
 - OS は Debian ベースの公式ディストリビューション Raspbian を使用。
 - ざっくり何ができる？
     - Zero には無線 LAN と Bluetooth を積んだモデルがある
