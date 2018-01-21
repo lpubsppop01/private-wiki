@@ -14,8 +14,10 @@ Windows 環境前提でいろいろと設定など。
 - Copy as Markdown のボタンを押したら再読み込みがかかった？
 - 開いているタブの保存はデフォルトで効いている。
 - ブックマークの同期は安定板ではまだだが、スナップショット版には実装済みらしい。
+    - スナップショット版で設定した。特に引っかかるところはなし。
 - スナップショット版と安定板を共存する形でインストールできるらしいのでそっちでいこうか。
     - [歌うキツネ : 複数の・バージョン違いのVivaldiを同時に起動し使う(Windows版)](http://utaukitune.ldblog.jp/archives/65908523.html)
     - [スナップショットと安定版Vivaldiの違い – Vivaldi日本語公式ブログ](https://jp.vivaldi.net/2017/11/28/snapshot_and_stable/)
     - [Snapshots | Vivaldi Browser](https://vivaldi.com/blog/snapshots/)
+    - プロファイルを分ける感じになる？みたいなのでスナップショット版のみでいくようにした。
 - alert のテキストをコピーできない。
