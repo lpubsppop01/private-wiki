@@ -18,3 +18,4 @@ Windows 環境前提でいろいろと設定など。
     - [歌うキツネ : 複数の・バージョン違いのVivaldiを同時に起動し使う(Windows版)](http://utaukitune.ldblog.jp/archives/65908523.html)
     - [スナップショットと安定版Vivaldiの違い – Vivaldi日本語公式ブログ](https://jp.vivaldi.net/2017/11/28/snapshot_and_stable/)
     - [Snapshots | Vivaldi Browser](https://vivaldi.com/blog/snapshots/)
+- alert のテキストをコピーできない。
